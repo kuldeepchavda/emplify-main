@@ -24,8 +24,8 @@ const Navbar = () => {
     ? [
         { route_: "", name: "Home" },
         { route_: "list_jobs", name: "Jobs" },
-        { route_: "profile", name: "Profile" },
         { route_: "job/applied", name: "Applied" },
+        { route_: "profile", name: "Profile" },
       ]
     : [
         { route_: "signup", name: "Signup" },
@@ -64,8 +64,8 @@ const Navbar = () => {
             <button
               className={` p-3 font-medium  rounded-full transition-colors duration-200 ${
                 menuOpen
-                  ? "text-red-600 text-left w-full hover:text-orange-400"
-                  : "bg-red-500  hover:bg-orange-700 text-white"
+                  ? "text-red-200 text-left w-full hover:text-orange-400"
+                  : "  hover:bg-orange-700 text-black"
               }`}
               onClick={() => {
                 logout();
